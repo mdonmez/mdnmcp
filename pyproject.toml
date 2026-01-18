@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "mdonmez", email = "124686256+mdonmez@users.noreply.github.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "fastmcp>=2.14.3",
     "httpx>=0.28.1",
