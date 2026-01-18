@@ -1,0 +1,33 @@
+[project]
+name = "mdnmcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mdonmez", email = "124686256+mdonmez@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=2.14.3",
+    "httpx>=0.28.1",
+    "markdownify>=1.2.2",
+    "orjson>=3.11.5",
+]
+
+[project.scripts]
+mdnmcp = "mdnmcp:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-asyncio>=1.3.0",
+    "respx>=0.22.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
